@@ -1,0 +1,17 @@
+#EXTM3U
+#EXT-X-VERSION:3
+
+# Video Tracks
+#EXT-X-STREAM-INF:BANDWIDTH=1500000,RESOLUTION=1280x720,AUDIO="audio",NAME="720"
+output_video_medium.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=250000,RESOLUTION=854x480,AUDIO="audio",NAME="480"
+output_video_low.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=10000,RESOLUTION=176x144,AUDIO="audio",NAME="144"
+output_video_lowest.m3u8
+
+# Audio Track 1 (First audio)
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="First audio",DEFAULT=YES,URI="first_audio.m3u8",CODECS="aac"
+
+# Audio Track 2 (Second audio)
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Second audio",DEFAULT=NO,URI="second_audio.m3u8",CODECS="aac"
+

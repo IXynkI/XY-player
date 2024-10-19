@@ -1,0 +1,13 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXTINF:10.007800,
+second_audio_000.aac
+#EXTINF:10.007800,
+second_audio_001.aac
+#EXTINF:9.984589,
+second_audio_002.aac
+#EXTINF:2.011233,
+second_audio_003.aac
+#EXT-X-ENDLIST
