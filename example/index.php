@@ -18,10 +18,10 @@
 	<div class="player-wrapper">
 		<div class="video-parent">
 			<div class="top-control-bar">
-				
+
 			</div>
 			<div class="report-container">
-				
+
 			</div>
 			<div class="video-container">
 				<video
@@ -43,9 +43,55 @@
 			</div>
 		</div>
 	</div>
+	<script src="controls.js"></script>
+	<script>
+		const videoID = "player";
+		const videojsPlayer = videojs(videoID, {
+			controls: true,
+			fluid: true,
+			techOrder: ['html5'],
+			plugins: {
+				hlsQualitySelector: {
+					displayCurrentQuality: true
+				}
+			}
+		});
 
-	<script defer src="classes.js"></script>
-	<script defer src="controls.js"></script>
+		// Pass the player instance to load XYPlayer
+		XYPlayerStart(videojsPlayer);
+
+		//Loading videos and adding them as episodes in seasons as well as loading subtitles
+		//seasonID,textContent
+		addSeason("1", "First Season");
+		addSeason("2", "Second Season");
+
+		//episodeID, textContent, seasonID, location
+		addEpisode("1", "First Episode", "1", "videos\\First Season\\First Episode\\master.m3u8")
+		addEpisode("1", "First Episode", "2", "videos\\Second Season\\First Episode\\master.m3u8")
+		addEpisode("2", "Second Episode", "2", "videos\\Second Season\\Second Episode\\master.m3u8")
+
+		//episodeID, seasonID, subtitlesID, location, lang, label
+		addSubtitle("1", "1", "1", "videos\\First Season\\First Episode\\Subtitles\\First_video_english.vtt",
+			"en", "English");
+		addSubtitle("1", "1", "2", "videos\\First Season\\First Episode\\Subtitles\\First_video_russian.vtt",
+			"ru", "Russian");
+		addSubtitle("1", "2", "3", "videos\\Second Season\\First Episode\\Subtitles\\First_video_english.vtt",
+			"en", "English");
+		addSubtitle("1", "2", "4", "videos\\Second Season\\First Episode\\Subtitles\\First_video_russian.vtt",
+			"ru", "Russian");
+		addSubtitle("2", "2", "5", "videos\\Second Season\\Second Episode\\Subtitles\\First_video_english.vtt",
+			"en", "English");
+		addSubtitle("2", "2", "6", "videos\\Second Season\\Second Episode\\Subtitles\\First_video_russian.vtt",
+			"ru", "Russian");
+		
+		//Custom Issue for report window
+		//issueID, value, label
+		addIssue("custom-issue", "custom-issue", "Custom Issue");
+
+		//Call resetControls to load new info
+		resetControls()
+
+	</script>
 </body>
 
 </html>
