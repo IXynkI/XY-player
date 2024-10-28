@@ -11,7 +11,7 @@
 
 	<link href="videojs-hls-quality-selector/videojs-hls-quality-selector.css" rel="stylesheet" />
 	<script src="videojs-hls-quality-selector/videojs-hls-quality-selector.min.js"></script>
-	<link rel="stylesheet" href="css/styles.css" ;>
+	<link rel="stylesheet" href="xy-player/xy-player-styles.min.css">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="controls.js"></script>
+	<script src="xy-player/xy-player.min.js"></script>
 	<script>
 		const videoID = "player";
 		const videojsPlayer = videojs(videoID, {
