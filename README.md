@@ -63,5 +63,29 @@ Returns an array of ISSUES.
 **getSubtitles()** `Array<{ episodeID: number, seasonID: number, subtitlesID: number, location: string, lang: string, label: string }>`  
 Returns an array of SUBTITLES.
 
+**removeSubtitleByID(subtitleID)** `void`  
+Removes a subtitle from the SUBTITLES table based on the given `subtitleID`.
+
+**removeIssueByID(issueID)** `void`  
+Removes an issue from the ISSUES table based on the provided `issueID`.
+
+**removeSeasonByID(seasonID)** `void`  
+Removes a season from the SEASONS table based on the provided `seasonID`.
+
+**removeEpisodeByID(episodeID)** `void`  
+Removes an episode from the EPISODES table based on the provided `episodeID`.
+
+**removeSubtitle(index)** `void`  
+Removes a subtitle from the SUBTITLES table at the specified `index`.
+
+**removeIssue(index)** `void`  
+Removes an issue from the ISSUES table at the specified `index`.
+
+**removeSeason(index)** `void`  
+Removes a season from the SEASONS table at the specified `index`.
+
+**removeEpisode(index)** `void`  
+Removes an episode from the EPISODES table at the specified `index`.
+
 ## License
 MIT. Copyright (c) Andrei Danilov (andreidanilov0440@outlook.com)
