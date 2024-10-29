@@ -34,6 +34,9 @@ XY-Player is a media web-player based on [**Videojs**](https://github.com/videoj
     const videojsPlayer = videojs(videoID);
     XYPlayerStart(videojsPlayer);
    ```
+## IMPORTANT NOTE
+For some reason on my machine - m3u8 playlist can change quality only when I'm following manifest options exactly as in example of manifests of .m3u8 files. Very similar to this [issue](https://github.com/videojs/video.js/issues/8008) 
+   
 ## Methods
 
 **addSeason(seasonID, textContent)** `void`  
