@@ -12,7 +12,7 @@ XY-Player is a media web-player based on [**Videojs**](https://github.com/videoj
 
 
 ## How to use
-1. Install via npm `npm install xy-player`
+1. Install via npm `npm install xy-player` or via direct downloading files inside **dist/** directory
 2. Include it into your html page after dependecies
    ```html
    <link rel="stylesheet" href="css/xy-player-styles.min.css">
